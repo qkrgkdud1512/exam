@@ -1,0 +1,25 @@
+project 생성
+
+============================================
+
+package > controller (cominterface.java : 인터페이스역할)
+            
+                               (service1.java : DB구문연결처리 -> 결과에따라 웹페이지 연결, 서블릿페이지)
+
+                               (connection.java : 서블릿 -> urlpattern)
+
+             >model (Dto.java)
+                         (Action1.java : 웹페이지에서 service1 로 연결해주는 페이지)
+
+             > mybatis (conn.xml : DB연결)
+
+                            (mapper.xml : DB처리)
+                         
+                            (map.java : 프로젝트안에서 DB설정)
+
+=============================================
+ (시작은 이 페이지에서 하면서 액션1페이지에서 서비스1페이지로, 그다음에 웹페이지연결)
+
+webcontent - index.html(sang.bo~)
+
+                  - user_list.jsp(전체자료 출력)
